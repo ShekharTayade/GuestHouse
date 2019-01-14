@@ -17,7 +17,8 @@ $(function () {
         dots: true,
         autoplay: true,
         autoplayHoverPause: true,
-        dotsSpeed: 400
+        dotsSpeed: 400,
+		autoHeight:true
     });
 
 

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SAMs </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <!-- Google fonts - Roboto -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100">
+    <!-- owl carousel-->
+    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.css">
+    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="favicon.png">
+    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <!-- navbar-->
+    <header class="header mb-3">
+		<nav class="navbar navbar-expand-lg">
+			<div class="container"><a href="index.html" class="navbar-brand home"><img src="img/logo.png" alt="SAM logo" class="d-none d-md-inline-block"><img src="img/logo-small.png" alt="SAMs logo" class="d-inline-block d-md-none"><span class="sr-only">Homepage</span></a>
+				<div class="navbar-buttons">
+					<button type="button" data-toggle="collapse" data-target="#navigation" class="btn btn-outline-secondary navbar-toggler"><span class="sr-only">Toggle navigation</span><i class="fa fa-align-justify"></i></button>
+					<button type="button" data-toggle="collapse" data-target="#search" class="btn btn-outline-secondary navbar-toggler"><span class="sr-only">Toggle search</span><i class="fa fa-search"></i></button><a href="basket.html" class="btn btn-outline-secondary navbar-toggler"></a>
+				</div>
+				<div id="navigation" class="collapse navbar-collapse">
+					<ul class="navbar-nav mr-auto">
+						  <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+					</ul>
+					<div class="navbar-buttons d-flex justify-content-end">
+						  <!-- /.nav-collapse-->
+						  <div id="login" class="navbar-collapse collapse d-none d-lg-block"><a href="#" data-toggle="modal" data-target="#login-modal" class="btn btn-primary navbar-btn"><i class="fa fa-login"></i><span>Login</span></a></div>
+					</div>
+				</div>
+			</div>
+		</nav>
+	  
+		<!-- Login Modal -->
+		<div id="login-modal" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true" class="modal fade">
+		  <div class="modal-dialog modal-sm">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title">Login</h5>
+				<button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+			  </div>
+			  <div class="modal-body">
+				<form action="customer-orders.html" method="post">
+				  <div class="form-group">
+					<input id="email-modal" type="text" placeholder="email" class="form-control">
+				  </div>
+				  <div class="form-group">
+					<input id="password-modal" type="password" placeholder="password" class="form-control">
+				  </div>
+				  <p class="text-center">
+					<button class="btn btn-primary"><i class="fa fa-sign-in"></i> Log in</button>
+				  </p>
+				</form>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  
+		<!-- END: Login Modal -->
+	  
+    </header>
+
+    <div id="all">
+		<div id="content">
+			<div class="container">
+				<div class = "row">
+					<div class="col-lg-12">
+						<!-- breadcrumb-->
+						<nav aria-label="breadcrumb">
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="#">Home</a></li>
+								<li aria-current="page" class="breadcrumb-item active">Booking</li>
+							</ol>
+						</nav>
+					</div>
+				</div>
+				<div class = "row">
+					<div class="col-lg-3">
+						<!--
+						*** MENUS AND FILTERS ***
+						_________________________________________________________
+						-->
+						<div class="card sidebar-menu mb-4">
+							<div class="card-header">
+								<h3 class="h4 card-title">Booking</h3>
+							</div>
+							<div class="card-body">
+								<ul class="nav nav-pills flex-column category-menu">
+									<li><a href="category.html" class="nav-link">New</a>
+									</li>
+									<li><a href="category.html" class="nav-link active">Edit Existing Booking</a>
+									</li>
+									<li><a href="category.html" class="nav-link">Print</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="card sidebar-menu mb-4">
+							<div class="card-header">
+								<h3 class="h4 card-title">Room Availability <a href="#" class="btn btn-sm btn-danger pull-right"></a></h3>
+							</div>
+						</div>
+						<div class="card-body">
+							<form>
+								<div class="form-group">
+									<div class="checkbox">
+									<label>
+										<input type="checkbox"><span class="colour white"></span> Single (14)
+									</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox"><span class="colour blue"></span> Two-Bed (10)
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox"><span class="colour green"></span>  Three-Bed (20)
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox"><span class="colour yellow"></span>  Four-Bed (13)
+										</label>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="col-lg-9">
+						<div class="box">
+							<h1>New Booking</h1>
+							<p>Record candidate details and confirm booking.</p>
+						</div>
+						<div class="box info-bar">
+							<form class="form-horizontal" action="">
+								<div class = "row">
+									<h4>Registration Number:</h4>
+									<div class = "col-sm-4">
+										<span class="form-control" id="reg">XXXXXXXX</span>
+									</div>
+								</div>
+								<hr>
+								<div class="col-md-12">
+									<nav class="nav-justified ">
+										<div class="nav nav-tabs " id="nav-tab" role="tablist">
+											<a class="nav-item nav-link active" id="pop1-tab" data-toggle="tab" href="#pop1" role="tab" aria-controls="pop1" aria-selected="true">Candidate Details</a>
+											<a class="nav-item nav-link" id="pop2-tab" data-toggle="tab" href="#pop2" role="tab" aria-controls="pop2" aria-selected="false">Room Allocation</a>
+											<a class="nav-item nav-link" id="pop3-tab" data-toggle="tab" href="#pop3" role="tab" aria-controls="pop3" aria-selected="false">Parent/Guardian Details</a>
+										</div>
+									</nav>
+									
+									<div class="tab-content" id="nav-tabContent">
+										<!-- Tab 1 -->
+										<div class="tab-pane fade show active" id="pop1" role="tabpanel" aria-labelledby="pop1-tab">
+											<div class = "row">
+												<div class = "col-sm-4">
+													<label> First Name:</label>
+													<div class="form-group">
+														<input class="form-control" type="text" class="form-control" id="fname" placeholder = "First Name">
+													</div>
+												</div>
+												<div class = "col-sm-4">
+													<label> Middle Name:</label>
+													<div class="form-group">
+														<input class="form-control" type="text" class="form-control" id="mname" placeholder = "Middle Name">
+													</div>
+												</div>
+												<div class = "col-sm-4">
+													<label> Last Name:</label>
+													<div class="form-group">
+														<input class="form-control" type="text" class="form-control" id="lname" placeholder = "Last Name">
+													</div>
+												</div>
+											</div>
+											<div class = "row">
+												<div class = "col-sm-4 pull-left">
+													<label> Date of Birth:</label>
+													<div class="form-group">
+														<input class="form-control" type="date" class="form-control" id="dob" placeholder = "DD/MM/YYY">
+													</div>
+												</div>
+												<div class = "col-sm-4 pull-left">
+													<label> Email:</label>
+													<div class="form-group">
+														<input class="form-control" type="email" class="form-control" id="email" placeholder = "Valid Email ID">
+													</div>
+												</div>
+												<div class = "col-sm-4 pull-left">
+													<label> Phone:</label>
+													<div class="form-group">
+														<input class="form-control" type="text" class="form-control" id="lname" placeholder = "Mobile/Landline(with STD code)">
+													</div>
+												</div>
+											</div>
+									
+										</div>
+										<!-- END : Tab 1 -->
+										
+										<!-- Tab 2 -->
+										<div class="tab-pane fade" id="pop2" role="tabpanel" aria-labelledby="pop2-tab">
+											<div class = "row">
+												<div class = "col-sm-4">
+													<div class="form-group">
+														<div class="radio">
+														  <label><input type="radio" name="optradio" checked>Block 1</label>
+														</div>
+														<div class="radio">
+														  <label><input type="radio" name="optradio">Block 2</label>
+														</div>
+													</div>
+												</div>
+												<div class = "col-sm-4">
+													<div class= "form-group">
+														<label for="parent1">Room:</label>
+														<select class="form-control" id="parent1">
+															<option>Room 1</option>
+															<option>Room 2</option>
+															<option>Room 3</option>
+															<option>Room 4</option>
+														</select>
+													</div>
+												</div>
+												<div class = "col-sm-4">
+													<div class= "form-group">
+														<label for="parent1">Bed:</label>
+														<select class="form-control" id="parent1">
+															<option>Bed 1</option>
+															<option>Bed 2</option>
+															<option>Bed 3</option>
+															<option>Bed 4</option>
+														</select>
+													</div>
+												</div>
+											</div>
+
+										</div>
+										<!-- END: Tab 2 -->
+												
+										<!-- Tab 3 -->
+										<div class="tab-pane fade" id="pop3" role="tabpanel" aria-labelledby="pop3-tab">
+											<div class = "row">
+												<div class = "col-sm-4">
+													<div class="form-group">
+														<label for="parent1">Select Guardian:</label>
+														<select class="form-control" id="parent1">
+															<option>Father</option>
+															<option>Mother</option>
+															<option>Husband</option>
+															<option>Wife</option>
+															<option>Guardian</option>
+														</select>
+													</div>
+												</div>
+
+												<div class = "col-sm-8">
+													<div class = "row">
+														<div class = "col-sm-6">
+															<div class= "form-group">
+																<label for="sel2">Educational Qualification:</label>
+																	<input class="form-control" type="text" class="form-control" id="mname" placeholder = "Middle Name">
+																<label for="sel2">Occupation/Designation:</label>
+																	<input class="form-control" type="text" class="form-control" id="mname" placeholder = "Middle Name">
+															</div>
+														</div>
+														<div class = "col-sm-6">
+															<div class= "form-group">
+																<label for="sel2">Company:</label>
+																	<input class="form-control" type="text" class="form-control" id="mname" placeholder = "Middle Name">
+																<label for="sel2">Phone:</label>
+																	<input class="form-control" type="text" class="form-control" id="mname" placeholder = "Middle Name">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class = "row">
+												<div class = "col-sm-4">
+													<div class="form-group">
+														<label for="parent1">Select Guardian:</label>
+														<select class="form-control" id="parent1">
+															<option>Father</option>
+															<option>Mother</option>
+															<option>Husband</option>
+															<option>Wife</option>
+															<option>Guardian</option>
+														</select>
+													</div>
+												</div>
+
+												<div class = "col-sm-8">
+													<div class = "row">
+														<div class = "col-sm-6">
+															<div class= "form-group">
+																<label for="sel2">Educational Qualification:</label>
+																<input class="form-control" type="text" class="form-control" id="mname" placeholder = "Middle Name">
+																<label for="sel2">Occupation/Designation:</label>
+																<input class="form-control" type="text" class="form-control" id="mname" placeholder = "Middle Name">
+															</div>
+														</div>
+														<div class = "col-sm-6">
+															<div class= "form-group">
+																<label for="sel2">Company:</label>
+																<input class="form-control" type="text" class="form-control" id="mname" placeholder = "Middle Name">
+																<label for="sel2">Phone:</label>
+																<input class="form-control" type="text" class="form-control" id="mname" placeholder = "Middle Name">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											
+											<div class = "row">
+												<div class = "col-sm-4">
+													<div class="form-group">
+														<label for="parent1">Select Guardian:</label>
+														<select class="form-control" id="parent1">
+															<option>Father</option>
+															<option>Mother</option>
+															<option>Husband</option>
+															<option>Wife</option>
+															<option>Guardian</option>
+														</select>
+													</div>
+												</div>
+
+												<div class = "col-sm-8">
+													<div class = "row">
+														<div class = "col-sm-6">
+															<div class= "form-group">
+																<label for="sel2">Educational Qualification:</label>
+																<input class="form-control" type="text" class="form-control" id="mname" placeholder = "Middle Name">
+																<label for="sel2">Occupation/Designation:</label>
+																<input class="form-control" type="text" class="form-control" id="mname" placeholder = "Middle Name">
+															</div>
+														</div>
+														<div class = "col-sm-6">
+															<div class= "form-group">
+																<label for="sel2">Company:</label>
+																<input class="form-control" type="text" class="form-control" id="mname" placeholder = "Middle Name">
+																<label for="sel2">Phone:</label>
+																<input class="form-control" type="text" class="form-control" id="mname" placeholder = "Middle Name">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</div>
+										<!-- END: Tab 3 -->
+									
+									</div>
+									<!-- END: Tab-content -->
+									
+								</div>	
+
+								<hr>
+								<div class = "text-center">
+									<button class = "btn-primary " type="submit" class="btn btn-default">Book</button>
+								</div>
+								
+							</form>				  
+
+						</div>
+					</div>
+					<!-- END`: Col-9 -->
+				</div>
+			</div>
+        </div>
+    </div>
+	
+
+	
+    <!--
+    *** FOOTER ***
+    _________________________________________________________
+    -->
+    <div id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <h4 class="mb-3">User section</h4>
+            <ul class="list-unstyled">
+              <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
+              <li><a href="register.html">Regiter</a></li>
+            </ul>
+          </div>
+          <!-- /.col-lg-3-->
+
+          <div class="col-lg-3 col-md-6">
+            <h4 class="mb-3">Address</h4>
+            <p><strong>SAMs Ltd.</strong><br>Xyx Road, Abc Nagar<br>Bengaluru<br><strong>Karnataka</strong></p><a href="#">Go to contact page</a>
+            <hr class="d-block d-md-none">
+          </div>
+          <!-- /.col-lg-3-->
+
+        </div>
+        <!-- /.row-->
+      </div>
+      <!-- /.container-->
+    </div>
+    <!-- /#footer-->
+    <!-- *** FOOTER END ***-->
+    
+    
+    <!--
+    *** COPYRIGHT ***
+    _________________________________________________________
+    -->
+    <div id="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mb-2 mb-lg-0">
+            <p class="text-center text-lg-left">©2018 SAMs.</p>
+          </div>
+          <div class="col-lg-6">
+            <p class="text-center text-lg-right">Design by <a href="#">XYZ Consulants</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- *** COPYRIGHT END ***-->
+    <!-- JavaScript files-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper.js/umd/popper.min.js"> </script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
+    <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="vendor/owl.carousel2.thumbs/owl.carousel2.thumbs.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="js/front.js"></script>
+	
+	<script>
+		nav-justified;
+	</script>
+  </body>
+</html>
